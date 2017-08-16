@@ -26,3 +26,9 @@ void leds_init()
 	FastLED.addLeds<WS2811, 6, RGB>(leds_pirates, nLEDS_PIRATES);
 	led_show();
 }
+
+void leds_dim(uint8_t amount)
+{
+	for (uint8_t i = 0; i < nLEDS; i++)
+		leds[i].fadeToBlackBy(amount);
+}

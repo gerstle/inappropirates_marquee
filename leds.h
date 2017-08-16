@@ -24,5 +24,6 @@ extern CRGB *leds_pirates;
 #define hsv_print(color) Serial.printf("HSV(%d, %d, %d)\n", color.hue, color.sat, color.val)
 
 void leds_init();
+void leds_dim(uint8_t amount);
 
 #endif

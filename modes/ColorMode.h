@@ -5,15 +5,13 @@
 
 class ColorMode: public BaseMode {
 public:
-    ColorMode(const char *name, CHSV color, long delay);
+    ColorMode(long l, const char *name, CHSV color, long delay);
     virtual ~ColorMode();
 
 public:
     void frame();
-    const char* name() { return _name; }
 
 private:
-    const char *_name;
     CHSV _color;
     unsigned long _lastChange;
     long _delay;

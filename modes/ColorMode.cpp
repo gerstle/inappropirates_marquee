@@ -1,6 +1,7 @@
 #include "ColorMode.h"
 
-ColorMode::ColorMode(const char *name, CHSV color, long delay) {
+ColorMode::ColorMode(long l, const char *name, CHSV color, long delay) {
+	length_millis = l;
     _name = name;
     _color = color;
     _lastChange = millis();

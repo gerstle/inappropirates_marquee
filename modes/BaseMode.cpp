@@ -6,9 +6,12 @@ BaseMode::BaseMode() {
 BaseMode::~BaseMode() {
 }
 
+void BaseMode::start() {
+}
+
 void BaseMode::frame() {
 }
 
 const char* BaseMode::name() {
-    return "base";
+    return _name;
 }

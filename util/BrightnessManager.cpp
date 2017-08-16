@@ -7,8 +7,8 @@ BrightnessManager::BrightnessManager() {
 BrightnessManager::~BrightnessManager() {
 }
 
-void BrightnessManager::set(uint8_t brightness) {
-	led_brightness(brightness);
+void BrightnessManager::set(uint8_t b) {
+	led_brightness(b);
 }
 
 void BrightnessManager::frame() {
