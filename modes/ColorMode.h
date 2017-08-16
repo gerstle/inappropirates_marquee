@@ -3,6 +3,8 @@
 
 #include "BaseMode.h"
 
+#define nOFF_LETTERS 3
+
 class ColorMode: public BaseMode {
 public:
     ColorMode(long l, const char *name, CHSV color, long delay);
@@ -15,6 +17,7 @@ private:
     CHSV _color;
     unsigned long _lastChange;
     long _delay;
+    Letter *offLetters[nOFF_LETTERS];
 };
 
 #endif /* COLORMODE_H_ */

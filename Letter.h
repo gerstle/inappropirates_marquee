@@ -3,12 +3,13 @@
 
 class Letter {
 public:
-	Letter(int index, int length, char const *letter);
-	virtual ~Letter();
+    Letter(int index, int length, char const *letter);
+    virtual ~Letter();
+    void offFrame();
 
-	int index;
-	int length;
-	char const *letter;
+    int index;
+    int length;
+    char const *letter;
 };
 
 #endif /* LETTER_H_ */

@@ -8,8 +8,8 @@
 
 class BrightnessManager: public BaseMode {
 public:
-	BrightnessManager();
-	virtual ~BrightnessManager();
+    BrightnessManager();
+    virtual ~BrightnessManager();
 
     void frame();
     void set(uint8_t b);

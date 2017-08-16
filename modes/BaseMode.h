@@ -5,11 +5,11 @@
 
 class BaseMode {
 public:
-	BaseMode();
-	virtual ~BaseMode();
+    BaseMode();
+    virtual ~BaseMode();
 
-	virtual void start();
-	virtual void frame();
+    virtual void start();
+    virtual void frame();
     virtual const char* name();
     unsigned long length_millis = 5000;
 
