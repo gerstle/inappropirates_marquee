@@ -28,6 +28,7 @@ private:
     uint8_t _val;
     float _offCounter;
     float _counterIncrement;
+    uint8_t _popCounter;
 };
 
 #endif /* LETTER_H_ */

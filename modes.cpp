@@ -12,7 +12,7 @@ ColorMode redMode = ColorMode(mode_time, "red", CHSV(0, 255, 255), 125);
 bool pirateFlags[nLETTERS] = {0, 0, 0, 0, 1};
 WordMode pirateMode = WordMode(mode_time, "pirate", CHSV(35, 170, 255), pirateFlags);
 bool iAteFlags[nLETTERS] = {1, 0, 0, 0, 0};
-WordMode iAteMode = WordMode(mode_time, "i ate", CHSV(35, 170, 255), iAteFlags);
+WordMode iAteMode = WordMode(mode_time, "i ate", CHSV(192, 170, 255), iAteFlags);
 
 
 BaseMode *modes[nModes] = { &iAteMode, &whiteMode, &pirateMode, &redMode };
