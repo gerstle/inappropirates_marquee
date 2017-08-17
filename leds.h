@@ -2,13 +2,6 @@
 #define _leds_h
 
 #include "FastLED.h"
-#include "Letter.h"
-
-#define nLETTERS_INAPPRO 3
-#define nLETTERS_PIRATES 2
-
-extern Letter letters_inappro[];
-extern Letter letters_pirates[];
 
 #define nLEDS_INAPPRO 30
 #define nLEDS_PIRATES 21

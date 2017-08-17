@@ -2,12 +2,13 @@
 #define COLORMODE_H_
 
 #include "BaseMode.h"
+#include "../letters.h"
 
 #define nOFF_LETTERS 3
 
 class ColorMode: public BaseMode {
 public:
-    ColorMode(long l, const char *name, CHSV color, long delay);
+    ColorMode(unsigned long l, const char *name, CHSV color, long delay);
     virtual ~ColorMode();
 
 public:

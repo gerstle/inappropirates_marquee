@@ -12,6 +12,7 @@
 #include "leds.h"
 #include "util/BrightnessManager.h"
 #include "modes.h"
+#include "letters.h"
 //end of add your includes here
 
 //Do not add code below this line

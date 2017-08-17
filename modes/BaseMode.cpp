@@ -1,6 +1,7 @@
 #include "BaseMode.h"
 
 BaseMode::BaseMode() {
+    _name = "base";
 }
 
 BaseMode::~BaseMode() {
