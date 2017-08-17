@@ -21,6 +21,8 @@ Letter::~Letter() {
 void Letter::calcValue()
 {
     _offCounter += _counterIncrement;
+
+    // https://www.desmos.com/calculator/l33omjh6wm
     _val = abs(sin((_offCounter - 10.0) * 2.0) / pow(2.0, _offCounter - 10.0));
     if (random(2) == 0)
         _val += random(25, 75);

@@ -1,7 +1,7 @@
 #ifndef LETTER_H_
 #define LETTER_H_
 
-#include "leds.h"
+#include "../leds.h"
 
 class Letter {
 public:
