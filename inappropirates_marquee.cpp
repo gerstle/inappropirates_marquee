@@ -32,6 +32,7 @@ unsigned long now = millis();
 unsigned long millis_passed;
 unsigned long statusTimer = millis();
 int frameCounter = 0;
+bool blink = true;
 void loop()
 {
 	now = millis();
@@ -43,6 +44,17 @@ void loop()
         statusTimer = now;
         //Serial.print("["); Serial.print(frameCounter); Serial.println("]");
         frameCounter = 0;
+        if (blink)
+        {
+            digitalWrite(LED_PIN, HIGH);
+            blink = false;
+        }
+        else
+        {
+            digitalWrite(LED_PIN, LOW);
+            blink = true;
+        }
+
     }
 
 	if (millis_passed >= modes[mode]->length_millis)

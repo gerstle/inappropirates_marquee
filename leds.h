@@ -3,8 +3,8 @@
 
 #include "FastLED.h"
 
-#define nLEDS_INAPPRO 30
-#define nLEDS_PIRATES 21
+#define nLEDS_INAPPRO 100
+#define nLEDS_PIRATES 100
 #define nLEDS nLEDS_INAPPRO + nLEDS_PIRATES
 
 extern CRGB leds[];

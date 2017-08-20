@@ -2,8 +2,8 @@
 #include "modes/ColorMode.h"
 #include "modes/WordMode.h"
 
-unsigned long mode_time = 20000;
-// unsigned long mode_time = 1200000; // 20 minutes
+//unsigned long mode_time = 20000;
+unsigned long mode_time = 1200000; // 20 minutes
 
 ColorMode whiteMode = ColorMode(mode_time, "white-ish", CHSV(35, 170, 255), 150);
 ColorMode redMode = ColorMode(mode_time, "red", CHSV(0, 255, 255), 125);
@@ -15,4 +15,4 @@ bool iAteFlags[nLETTERS] = {1, 0, 0, 0, 0};
 WordMode iAteMode = WordMode(mode_time, "i ate", CHSV(192, 170, 255), iAteFlags);
 
 
-BaseMode *modes[nModes] = { &iAteMode, &whiteMode, &pirateMode, &redMode };
+BaseMode *modes[nModes] = { &whiteMode, &redMode };

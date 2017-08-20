@@ -47,7 +47,7 @@ void ColorMode::frame() {
             availableOffIndex = i;
     }
 
-    dice = random(100000);
+    dice = random(1000000);
     if (availableOffIndex > -1 && availableOffIndex < nOFF_LETTERS && dice == 0)
     {
         dice = random(0, nLETTERS);
