@@ -33,6 +33,7 @@ unsigned long millis_passed;
 unsigned long statusTimer = millis();
 int frameCounter = 0;
 bool blink = true;
+
 void loop()
 {
 	now = millis();
@@ -42,7 +43,7 @@ void loop()
     if (now >= (statusTimer + 1000))
     {
         statusTimer = now;
-        //Serial.print("["); Serial.print(frameCounter); Serial.println("]");
+        // Serial.print("["); Serial.print(frameCounter); Serial.println("]");
         frameCounter = 0;
         if (blink)
         {
@@ -101,6 +102,11 @@ void loop()
 	{
 		brightnessManager.frame();
 		modes[mode]->frame();
+	}
+
+	for (uint8_t i = 0; i < OFF_LENGTH; i++)
+	{
+		leds[off[i]] = CRGB::Black;
 	}
 
 	led_show();

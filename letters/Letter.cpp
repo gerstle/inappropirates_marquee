@@ -53,7 +53,7 @@ void Letter::offFrame(unsigned long now) {
 }
 
 void Letter::goOffQuickly(unsigned long t, uint8_t h, uint8_t s) {
-    _counterIncrement = 0.1;
+    _counterIncrement = 0.8;
     goOff(t, h, s);
 }
 
@@ -66,14 +66,14 @@ void Letter::goOff(unsigned long t, uint8_t h, uint8_t s) {
     _sat = s;
     _val = 255;
     _offCounter = 0;
-    _counterIncrement = 0.001;
+    _counterIncrement = 0.008;
 
     for (int i = index; i < index + length; i++)
         leds[i] = CRGB::Black;
 }
 
 void Letter::goOn() {
-    // Serial.printf("on '%s'\n", letter);
+    Serial.printf("on '%s'\n", letter);
     offStart = 0;
     offTime = 0;
     _val = 255;

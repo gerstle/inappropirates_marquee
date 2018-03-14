@@ -3,13 +3,15 @@
 
 #include "FastLED.h"
 
-#define nLEDS_INAPPRO 100
-#define nLEDS_PIRATES 100
+#define nLEDS_INAPPRO 98
+#define nLEDS_PIRATES 93
 #define nLEDS nLEDS_INAPPRO + nLEDS_PIRATES
+#define OFF_LENGTH 23
 
 extern CRGB leds[];
 extern CRGB *leds_inappro;
 extern CRGB *leds_pirates;
+extern uint8_t off[];
 
 #define led_show() FastLED.show()
 #define led_brightness(b) FastLED.setBrightness(b)
