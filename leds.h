@@ -6,7 +6,7 @@
 #define nLEDS_INAPPRO 98
 #define nLEDS_PIRATES 93
 #define nLEDS nLEDS_INAPPRO + nLEDS_PIRATES
-#define OFF_LENGTH 23
+#define OFF_LENGTH 25
 
 extern CRGB leds[];
 extern CRGB *leds_inappro;

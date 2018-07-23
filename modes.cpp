@@ -4,6 +4,7 @@
 #include "modes/RainbowMode.h"
 
 unsigned long ten_s = 10000;
+unsigned long twenty_s = 20000;
 unsigned long five_m = 300000;
 unsigned long ten_m = 600000;
 unsigned long fiften_m = 900000;
@@ -44,7 +45,7 @@ WordMode irateM = WordMode(word_time, "irate", red, irateFlags);
 WordMode pieM = WordMode(word_time, "pie", white, pieFlags);
 WordMode popM = WordMode(word_time, "pop", red, popFlags);
 WordMode ropeM = WordMode(word_time, "rope", red, ropeFlags);
-WordMode inappropM = WordMode(word_time, "inapprop", red, ropeFlags);
+WordMode inappropM = WordMode(word_time, "inapprop", red, inappropFlags);
 
 BaseMode *modes[nModes] = {
 		&redM, &pirateM,

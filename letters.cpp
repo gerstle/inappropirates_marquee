@@ -4,9 +4,9 @@ Letter letters[nLETTERS] = {
         //    index start, length, name
         // -- first string, indexes are reversed
         Letter(85, 13, "i"),
-        Letter(64, 18, "n"),
+        Letter(64, 19, "n"),
         Letter(51, 12, "a"),
-        Letter(36, 13, "p"),
+        Letter(35, 14, "p"),
         Letter(21, 13, "p"),
         Letter(12, 7, "r"),
         Letter(0, 11, "o"),

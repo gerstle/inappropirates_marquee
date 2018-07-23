@@ -17,6 +17,7 @@ void setup()
 {
 	Serial.begin(9600);
 	pinMode(LED_PIN, OUTPUT);
+	delay(1200);
 
 	leds_init();
 
