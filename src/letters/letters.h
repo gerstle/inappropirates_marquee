@@ -1,9 +1,9 @@
 #ifndef LETTERS_H_
 #define LETTERS_H_
 
-#include "letters/Letter.h"
+#include "Letter.h"
 
-#define nLETTERS 14
+#define nLETTERS 16
 extern Letter letters[];
 
 #endif /* LETTERS_H_ */

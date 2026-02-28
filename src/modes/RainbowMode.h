@@ -2,7 +2,7 @@
 #define MODES_RAINBOWMODE_H_
 
 #include "BaseMode.h"
-#include "../letters.h"
+#include "../letters/letters.h"
 
 class RainbowMode: public BaseMode {
 public:
