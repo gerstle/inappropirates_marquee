@@ -3,8 +3,8 @@
 
 #include "FastLED.h"
 
-#define nLEDS_INAPPRO 98
-#define nLEDS_PIRATES 93
+#define nLEDS_INAPPRO 98 + 50
+#define nLEDS_PIRATES 93 + 50
 #define nLEDS nLEDS_INAPPRO + nLEDS_PIRATES
 #define OFF_LENGTH 25
 

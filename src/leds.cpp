@@ -1,5 +1,5 @@
 #include "leds.h"
-#include "letters.h"
+#include "letters/letters.h"
 
 CRGB leds[nLEDS];
 CRGB *leds_inappro = &(leds[0]);
@@ -13,7 +13,7 @@ uint8_t off[OFF_LENGTH] = {
 };
 
 void leds_init() {
-	for (uint8_t i = 0; i < nLEDS; i++)
+	for (int i = 0; i < nLEDS; i++)
 		leds[i] = CHSV(0, 0, 0);
 
 	FastLED.setBrightness(0);
@@ -24,6 +24,6 @@ void leds_init() {
 }
 
 void leds_dim(uint8_t amount) {
-	for (uint8_t i = 0; i < nLEDS; i++)
+	for (int i = 0; i < nLEDS; i++)
 		leds[i].fadeToBlackBy(amount);
 }

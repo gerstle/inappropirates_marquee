@@ -2,7 +2,7 @@
 #define MODES_WORDMODE_H_
 
 #include "BaseMode.h"
-#include "../letters.h"
+#include "../letters/letters.h"
 
 class WordMode: public BaseMode {
 public:

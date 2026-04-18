@@ -3,7 +3,8 @@
 
 #include "modes/BaseMode.h"
 
-#define nModes 24
+// #define nModes 24
+#define nModes 4
 extern BaseMode *modes[];
 
 #endif /* MODES_H_ */

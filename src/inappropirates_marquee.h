@@ -10,8 +10,8 @@
 
 //add your includes for the project inappropirates_marquee here
 #include "leds.h"
-#include "util/BrightnessManager.h"
-#include "modes.h"
+#include "BrightnessManager.h"
+#include "src/modes.h"
 #include "letters.h"
 //end of add your includes here
 

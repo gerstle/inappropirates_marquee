@@ -2,7 +2,7 @@
 #define COLORMODE_H_
 
 #include "BaseMode.h"
-#include "../letters.h"
+#include "../letters/letters.h"
 
 #define nOFF_LETTERS 3
 

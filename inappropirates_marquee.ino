@@ -1,4 +1,10 @@
-#include "inappropirates_marquee.h"
+#include "Arduino.h"
+
+//add your includes for the project inappropirates_marquee here
+#include "src/leds.h"
+#include "src/util/BrightnessManager.h"
+#include "src/modes.h"
+#include "src/letters/letters.h"
 
 #define RANDOM_PIN 3
 #define LED_PIN 13
@@ -16,6 +22,7 @@ uint8_t tmp_brightness = 0;
 void setup()
 {
 	Serial.begin(9600);
+    Serial.println("setup...");
 	pinMode(LED_PIN, OUTPUT);
 	delay(1200);
 
@@ -44,7 +51,7 @@ void loop()
     if (now >= (statusTimer + 1000))
     {
         statusTimer = now;
-        // Serial.print("["); Serial.print(frameCounter); Serial.println("]");
+        Serial.print("["); Serial.print(frameCounter); Serial.println("]");
         frameCounter = 0;
         if (blink)
         {
@@ -105,7 +112,7 @@ void loop()
 		modes[mode]->frame();
 	}
 
-	for (uint8_t i = 0; i < OFF_LENGTH; i++)
+	for (int i = 0; i < OFF_LENGTH; i++)
 	{
 		leds[off[i]] = CRGB::Black;
 	}
