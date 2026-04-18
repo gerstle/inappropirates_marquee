@@ -14,12 +14,12 @@ unsigned long twenty_m = 1200000;
 unsigned long mode_time = ten_s;
 
 // use these for realz
-// unsigned long color_time = two_m;
-// unsigned long word_time = five_m;
+unsigned long color_time = two_m;
+unsigned long word_time = five_m;
 
 // good for debugging/checking
-unsigned long color_time = ten_s;
-unsigned long word_time = twenty_s;
+// unsigned long color_time = ten_s;
+// unsigned long word_time = twenty_s;
 
 CHSV white = CHSV(35, 170,255);
 CHSV red = CHSV(0, 255, 255);
