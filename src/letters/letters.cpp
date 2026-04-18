@@ -12,20 +12,21 @@ Letter letters[nLETTERS] = {
         Letter(12, 7, "r"),
         Letter(0, 11, "o"),
         // -- second string, normal
-        // Letter(148, 14, "p"),
-        // Letter(164, 10, "i"),
-        // Letter(174, 9, "r"),
-        // Letter(184, 12, "a"),
-        // Letter(198, 14, "t"),
-        // Letter(214, 12, "e"),
-        // Letter(228, 13, "s"),
-        // Letter(241, 50, "-")
-        Letter(148, 14, "p"),
-        Letter(164, 12, "a"),
-        Letter(178, 10, "r"),
-        Letter(189, 13, "t"),
-        Letter(203, 18, "y"),
-        Letter(225, 10, "!"),
-        Letter(235, 6, "-"),
+        Letter(148, 14, "p"), // 14 + 2 = 16
+        Letter(164, 10, "i"), // 10 + 0 = 10
+        Letter(174, 9, "r"),  // 9  + 1 = 10 -> 3 & 4 are dead?
+        Letter(184, 12, "a"), // 12 + 1 = 13
+        Letter(197, 15, "t"), // 15 + 2 = 17
+        Letter(214, 12, "e"), // 12 + 2 = 14
+        Letter(228, 13, "s"), // 13 + 0 = 13
         Letter(241, 50, "-")
+        // party
+        // Letter(148, 14, "p"),
+        // Letter(164, 12, "a"),
+        // Letter(178, 10, "r"),
+        // Letter(189, 13, "t"),
+        // Letter(203, 18, "y"),
+        // Letter(225, 10, "!"),
+        // Letter(235, 6, "-"),
+        // Letter(241, 50, "-")
 };
