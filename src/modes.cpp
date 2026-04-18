@@ -14,12 +14,12 @@ unsigned long twenty_m = 1200000;
 unsigned long mode_time = ten_s;
 
 // use these for realz
-unsigned long color_time = two_m;
-unsigned long word_time = five_m;
+// unsigned long color_time = two_m;
+// unsigned long word_time = five_m;
 
 // good for debugging/checking
-// unsigned long color_time = ten_s;
-// unsigned long word_time = twenty_s;
+unsigned long color_time = ten_s;
+unsigned long word_time = twenty_s;
 
 CHSV white = CHSV(35, 170,255);
 CHSV red = CHSV(0, 255, 255);
@@ -44,36 +44,41 @@ bool popFlags[nLETTERS] =      {1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1};
 bool ropeFlags[nLETTERS] =     {1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1};
 bool inappropFlags[nLETTERS] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1};
 
+bool test[nLETTERS] =          {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+WordMode testM = WordMode(word_time, "test", red, test);
+
 WordMode pirateM = WordMode(word_time, "pirate", red, pirateFlags);
-WordMode iAteM = WordMode(word_time, "i ate", white, iAteFlags);
+WordMode iAteM = WordMode(word_time, "i ate", red, iAteFlags);
 WordMode iAPirateM = WordMode(word_time, "i a pirate", red, iAPirateFlags);
 WordMode piratesM = WordMode(word_time, "pirates", red, piratesFlags);
 WordMode ratsM = WordMode(word_time, "rats", red, ratsFlags);
-WordMode napM = WordMode(word_time, "nap", white, napFlags);
-WordMode pitsM = WordMode(word_time, "pits", white, pitsFlags);
+WordMode napM = WordMode(word_time, "nap", red, napFlags);
+WordMode pitsM = WordMode(word_time, "pits", red, pitsFlags);
 WordMode irateM = WordMode(word_time, "irate", red, irateFlags);
-WordMode pieM = WordMode(word_time, "pie", white, pieFlags);
+WordMode pieM = WordMode(word_time, "pie", red, pieFlags);
 WordMode popM = WordMode(word_time, "pop", red, popFlags);
-WordMode ropeM = WordMode(word_time, "rope", red, ropeFlags);
+WordMode ropeM = WordMode(word_time, "rope", purple, ropeFlags);
 WordMode inappropM = WordMode(word_time, "inapprop", red, inappropFlags);
 
-// BaseMode *modes[nModes] = {
-		// &redM, &pirateM,
-		// &whiteM, &iAteM,
-		// &redM, &ratsM,
-		// &rainbowM, &inappropM,
-		// &redM, &napM,
-		// &redM, &piratesM,
-		// &whiteM, &pitsM,
-		// &redM, &irateM,
-		// &rainbowM, &inappropM,
-		// &redM, &pieM,
-		// &whiteM, &popM,
-		// &redM, &ropeM
-// };
 BaseMode *modes[nModes] = {
-	&purpleM,
-	&rainbowM,
-	&redM,
-	&rainbowM,
+	&redM, &pirateM,
+	&redM, &iAteM,
+	&redM, &ratsM,
+	&rainbowM, &inappropM,
+	&redM, &napM,
+	&purpleM, &piratesM,
+	&redM, &pitsM,
+	&redM, &irateM,
+	&rainbowM, &inappropM,
+	&redM, &pieM,
+	&redM, &popM,
+	&redM, &ropeM
 };
+
+// inapproparty
+// BaseMode *modes[nModes] = {
+// 	&purpleM,
+// 	&rainbowM,
+// 	&redM,
+// 	&rainbowM,
+// };
